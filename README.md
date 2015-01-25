@@ -6,6 +6,10 @@ Starter pour mes projets d'intégration front-end. Basé sur le tuto de [grafika
 $ npm install
 $ gulp
 ```
+## CONTENU
+`libSass`: remplace ruby sass
+`Sprite`: génère des sprites - Retina ready + optimisation des png
+`Grid`: une grille responsive de base est intégrée
 
 ## TO DO
 1. Ajouter une tache pour l'optimisation des images
