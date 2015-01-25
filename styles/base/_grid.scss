@@ -1,0 +1,37 @@
+// Breakpoints
+$breakpoint: "only screen and (min-width: 45em)";
+
+.site-container {
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: $grid-max-width;
+    margin: 0 auto;
+}
+
+.wrapper:after,
+.row:after {
+    @include clearfix();
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+}
+
+@media #{$breakpoint} {
+    .wrapper {
+        width: 95%;
+        max-width: $grid-max-width;
+    }
+    @for $i from 1 through $grid-columns {
+        .col-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}

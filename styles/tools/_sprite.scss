@@ -1,0 +1,21 @@
+.icon {
+    display: inline-block;
+    background-image: url('../img/sprite.png');
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and ( min--moz-device-pixel-ratio: 2),
+    only screen and ( -o-min-device-pixel-ratio: 2/1),
+    only screen and ( min-device-pixel-ratio: 2),
+    only screen and ( min-resolution: 192dpi),
+    only screen and ( min-resolution: 2dppx) {
+        background-image: url('../img/sprite@2x.png');
+        background-size: 32px 32px;
+    }
+}
+    .icon-github {
+      @extend .icon;
+      background-position: 0px 0px;
+      width: 32px;
+      height: 32px;
+    }
