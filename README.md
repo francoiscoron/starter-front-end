@@ -8,7 +8,9 @@ $ gulp
 ```
 ## CONTENU
 `libSass`: remplace ruby sass
+
 `Sprite`: génère des sprites - Retina ready + optimisation des png
+
 `Grid`: une grille responsive de base est intégrée
 
 ## TO DO
