@@ -7,8 +7,8 @@ path = global.path
 
 # Task
 gulp.task "copyNoRetina", ->
-    dest = path.img + sprite_directory
-    gulp.src path.img + sprite_directory + "@2x/*.png"
+    dest = path.assets + sprite_directory
+    gulp.src path.assets + sprite_directory + "@2x/*.png"
     .pipe $.changed dest
     .pipe $.imageResize
         width: '50%',
@@ -22,16 +22,16 @@ gulp.task 'sprite', ['copyNoRetina'], ->
     opts = { optimiationLevel: 5, progressive: true, interlace: true}
 
     # Sprite Retina
-    gulp.src(path.img + sprite_directory + '@2x/*.png')
+    gulp.src(path.assets + sprite_directory + '@2x/*.png')
     .pipe $.spritesmith
         imgName: "sprite@2x.png",
         cssName: "_sprite.scss"
     .img
     .pipe($.imagemin(opts))
-    .pipe gulp.dest path.img
+    .pipe gulp.dest path.assets
 
     # Sprite
-    spriteData = gulp.src(path.img + sprite_directory + '*.png')
+    spriteData = gulp.src(path.assets + sprite_directory + '*.png')
     .pipe $.spritesmith
         imgName: "sprite.png",
         cssName: "_sprite.scss"
@@ -41,7 +41,7 @@ gulp.task 'sprite', ['copyNoRetina'], ->
     # Images
     spriteData.img
     .pipe($.imagemin(opts))
-    .pipe gulp.dest(path.img)
+    .pipe gulp.dest(path.assets)
 
     # CSS
     spriteData.css.pipe gulp.dest(path.scss + "tools/")

@@ -2,6 +2,9 @@
 @import 'tools/config';
 @import 'tools/mixins';
 
+// WORDPRESS
+@import 'base/theme-info';
+
 // BASE
 @import 'base/reset';
 @import 'base/base';
@@ -9,12 +12,11 @@
 
 // MODULES
 @import 'modules/typography';
-@import 'modules/default-theme';
-@import 'modules/form';
 
 
 // LAYOUTS
 @import 'layouts/header';
+@import 'layouts/footer';
 
 // SPRITE
 @import 'tools/sprite';

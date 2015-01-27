@@ -1,6 +1,6 @@
 .icon {
     display: inline-block;
-    background-image: url('../img/sprite.png');
+    background-image: url('../assets/sprite.png');
 
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -9,7 +9,7 @@
     only screen and ( min-device-pixel-ratio: 2),
     only screen and ( min-resolution: 192dpi),
     only screen and ( min-resolution: 2dppx) {
-        background-image: url('../img/sprite@2x.png');
+        background-image: url('../assets/sprite@2x.png');
         background-size: 32px 32px;
     }
 }

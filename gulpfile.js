@@ -3,7 +3,8 @@ global.path = {
     server: "./",
     css: "./",
     scss: "styles/",
-    img: "img/",
+    assets: "assets/",
+    img: "assets/img/",
     js: "js/",
     refresh: ["*.html", "**/*.php", "js/*.js"]
 }
