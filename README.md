@@ -3,6 +3,7 @@ Starter pour mes projets d'intégration front-end. Basé sur le tuto de [grafika
 
 ## INSTALATION
 ```
+$ git clone git@github.com:francoiscoron/starter-front-end.git mon-theme
 $ npm install
 $ gulp
 ```
