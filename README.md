@@ -23,7 +23,7 @@ Les icones sont à placer dans le dossier `@2x`. Afin de gérer au mieux le *ret
     │   ├── icons/
     │   │  ├── @2x/
     │   │     └── icone1.png
-
+    └── ...
 
 ## LISTE DES TACHES
 La liste des taches éxecutable avec la commande suivante :
