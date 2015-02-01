@@ -1,7 +1,7 @@
 # STARTER FRONT END
 Dossier de base pour bien commencer mes projets d'intégration front-end. Basé sur le tuto de [grafikart](http://www.grafikart.fr/tutoriels/html-css/sass-libsass-nodejs-553).
 
-# REQUIS
+## REQUIS
 
 - [NodeJs](http://nodejs.org/)
 - [gulp](http://gulpjs.com/)
