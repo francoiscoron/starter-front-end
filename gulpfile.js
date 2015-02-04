@@ -5,7 +5,7 @@ global.path = {
     scss: "styles/",
     assets: "assets/",
     img: "assets/img/",
-    js: "js/",
+    js: "scripts/",
     refresh: ["*.html", "**/*.php", "js/*.js"]
 }
 
