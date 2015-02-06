@@ -7,8 +7,7 @@ path = global.path
 
 # Task
 gulp.task 'script', ->
-    gulp.src path.js + "**/*.js"
-        .pipe $.order([
+    gulp.src ([
             "#{path.js}vendor/jquery.js",
             "#{path.js}vendor/**/*.js",
             "#{path.js}*.js"
