@@ -10,10 +10,10 @@ $breakpoint: "only screen and (min-width: 45em)";
     width: 100%;
     max-width: $grid-max-width;
     margin: 0 auto;
+    @include clearfix();
 }
 
-.wrapper:after,
-.row:after {
+.row {
     @include clearfix();
 }
 
