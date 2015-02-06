@@ -6,7 +6,9 @@ reload = browserSync.reload
 path = global.path
 
 # Task
-gulp.task 'default', ->
+gulp.task 'build', ['sass','script','sprite','image']
+
+gulp.task 'default', ['build'], ->
     browserSync
         server: {baseDir: path.server}
         notify: false
