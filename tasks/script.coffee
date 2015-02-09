@@ -8,7 +8,7 @@ path = global.path
 # Task
 gulp.task 'script', ->
     gulp.src ([
-            "#{path.js}vendor/jquery.js",
+            "!#{path.js}vendor/*.min.js",
             "#{path.js}vendor/**/*.js",
             "#{path.js}*.js"
         ])

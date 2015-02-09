@@ -15,4 +15,6 @@ gulp.task 'default', ['build'], ->
 
     gulp.watch path.refresh, reload
     gulp.watch "#{path.img}icons/@2x/*.png", ['sprite']
+    gulp.watch "#{path.img}*", ['image']
     gulp.watch "#{path.scss}**/*.scss", ['sass']
+    gulp.watch "#{path.js}**/*.js", ['script']
